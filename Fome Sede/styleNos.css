@@ -1,0 +1,176 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  
+  }
+  
+  body {
+    background-color: #E8F2FA;
+  }
+  
+  .instagram img {
+    position: fixed;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    margin-right: -1%;
+    top: 60px;
+  }
+  
+  .facebook img {
+    position: fixed;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    margin-right: -1%;
+    top: 110px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #000080;
+  
+  }
+  
+  #position {
+    text-align: left;
+    margin-left: 23%;
+    margin-right: 23%;
+  }
+  
+  #position h2 {
+    margin-left: -20px;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-item img {
+    margin-top: 80px;
+    width: 100%;
+    height: 500px;
+  
+  }
+  
+  header {
+    width: 100%;
+    background-color: #E0DDD1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0;
+  
+  }
+  
+  .logo-imagem img {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  
+  .container-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-texto {
+    margin-left: 20px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .menu li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .menu li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    padding: 10px 15px;
+  }
+  
+  .menu li a:hover {
+    background-color: #E8F2FA;
+  }
+  
+  h4 {
+    font-size: 20px;
+  }
+  
+  .menu li:hover ul {
+    display: block;
+  }
+  
+  .menu ul.hover {
+    display: block;
+  }
+  
+  .menu {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #blogCarousel {
+    z-index: 1;
+  }
+  
+  .menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu li {
+    margin: 0 10px;
+    position: relative;
+  }
+  
+  .menu li:hover ul {
+    display: block;
+  }
+  
+  .menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu ul ul li {
+    width: 200px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .menu ul ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu a:hover {
+    color: #000;
+  }
+  
+  .menu ul ul a {
+    color: #000;
+  }
