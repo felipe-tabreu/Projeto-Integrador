@@ -24,7 +24,7 @@ footer{
 }
 
 #footer_contacts h1{
-    margin-bottom: 0.75rem ;
+    margin-bottom: 0.55rem ;
 }
 
 #footer_social_media{
@@ -62,6 +62,9 @@ footer{
 #whatsapp {
     background-color: rgb(92, 193, 92);
 }
+#play {
+    background-color:red;
+}
 
 .footer-list{
     display: flex;
@@ -75,7 +78,7 @@ footer{
    transition:all 0.4s ;
 }
 .footer-list .footer-link:hover{
-    color:#7f37c9
+    color: wheat
 }
 #footer_subscibe{
     display: flex;
@@ -124,9 +127,11 @@ footer{
     font-weight: 100;
 }
 #footer_contacts img {
+    width: 50px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
+    background-color: white;
 }

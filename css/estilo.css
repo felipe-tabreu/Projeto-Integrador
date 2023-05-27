@@ -69,6 +69,7 @@ header {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+  background-color: white;
 }
 
 .container-logo {
@@ -78,6 +79,7 @@ header {
 
 .logo-texto {
   margin-left: 20px;
+  margin-top: 10px;
   color: #FFFFFF;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -119,14 +121,10 @@ header {
 }
 .dropdown-item {
   background-color: #000000;
-  border-radius: 5%;
-  -webkit-border-radius: 5%;
-  -moz-border-radius: 5%;
-  -ms-border-radius: 5%;
-  -o-border-radius: 5%;
-}
+  }
 
 .menu li a:hover {
+  
   background-color: #ffffff;
 }
 
@@ -151,12 +149,7 @@ h4 {
   z-index: 1;
 }
 
-.menu ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-}
+
 
 .menu li {
   margin: 0 10px;
