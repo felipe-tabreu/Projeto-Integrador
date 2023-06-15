@@ -75,56 +75,46 @@
   </header>
 
 <body>
-	<div class="wrapper">
+	<div class="wrapper" id="btn-confirmar">
 		<form class="form">
-			<p class="title">Solicitar doação</p>
-			<p class="message">Preencha os dados para entrarmos em contato! </p>
-			<label>
-				<input required="" placeholder="" type="text" name="nome" class="input">
-				<span>Primeiro Nome</span>
-			</label>
-			<label>
-				<input required="" placeholder="" type="text" name="nome2" class="input">
-				<span>Ultimo Nome</span>
-			</label>
-			<label>
-				<input required="" placeholder="" type="text" name="cpf" class="input">
-				<span>CPF</span>
-			</label>
-			<label>
-				<input required="" placeholder="" type="text" name="telefone" name="telefone" class="input">
-				<span>Telefone</span>
-			</label>
-			<label>
-				<select name="opcoes" class="stylematerial" id="opcoes">
-					<option value="">Selecione os materiais para serem retirados</option>
-					<option value="Lapis">Lapis</option>
-					<option value="Caderno">Caderno</option>
-					<option value="Mochila">Mochila</option>
-					<option value="Estojo">Estojo</option>
-				</select>
-			</label>
+			<p class="title">Conheça nossas igrejas!</p>
+			<p class="message">A Fome e Sede mais perto de você! </p>
 			<label>
 				<select class="stylematerial" id="localidade">
-					<option value="">Selecione o local de retirada</option>
+					<option value="">Selecione alguma igreja</option>
 					<option
-						value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.780254412028!2d-49.23792758513392!3d-16.63779413853193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef250d5f74183%3A0x78e6118444fcfc2e!2sFaculdade%20Senac%20Goi%C3%A1s%20-%20Sede!5e0!3m2!1spt-BR!2sbr!4v1681847056726!5m2!1spt-BR!2sbr">
-						Faculdade Senac Goiás - Sede</option>
+						value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.68280215762036!2d-49.29047032520069!3d-16.830084599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef9514484ff89%3A0x1fac58911db0bfe3!2sComunidade%20Fome%20E%20Sede%20De%20Deus%20Colina%20Azul!5e0!3m2!1spt-BR!2sbr!4v1686868014336!5m2!1spt-BR!2sbr">
+					Comunidade Fome e Sede Colina Azul</option>
 					<option
-						value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1910.2421677213413!2d-49.274319608254714!3d-16.75256215697693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef0a8a7e0e6d5%3A0x8fabeeb88a305c3b!2sSenac%20Aparecida%20de%20Goi%C3%A2nia!5e0!3m2!1spt-BR!2sbr!4v1681846951262!5m2!1spt-BR!2sbr">
-						Senac Aparecida de Goiânia</option>
+						value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.91030426351267!2d-49.14716522520066!3d-16.648593500000008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935eef74bd58009b%3A0xc08254cc5bec0d0e!2sComunidade%20Fome%20e%20Sede%20de%20Deus%20-%20Senador%20Canedo!5e0!3m2!1spt-BR!2sbr!4v1686868112605!5m2!1spt-BR!2sbr">
+						Comunidade Fome e Sede Senador Canedo</option>
 					<option
-						value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d478.6190587870949!2d-48.95171771216421!3d-16.325372649296508!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ea47b2f37f365%3A0xd30ea0258959d377!2sSenac%20An%C3%A1polis!5e0!3m2!1spt-BR!2sbr!4v1681847512212!5m2!1spt-BR!2sbr">
-						Senac Anápolis</option>
+						value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238.6717211594973!2d-49.34714362520065!3d-16.838876000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef92288e9d0dd%3A0xdeacecc409fb5792!2sComunidade%20Fome%20e%20Sede%20de%20Deus%20Alto%20da%20Conquista!5e0!3m2!1spt-BR!2sbr!4v1686868216435!5m2!1spt-BR!2sbr">
+						Comunidade Fome e Sede Alto da Conquista</option>
+						<option
+						value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7821617.611704468!2d-49.298038299999995!3d-16.8189516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef914d2a4a975%3A0x240aa5c72fb91f81!2sFome%20e%20Sede%20Church!5e0!3m2!1spt-BR!2sbr!4v1686868367069!5m2!1spt-BR!2sbr">
+						Fome e Sede Church</option>
+						<option
+						value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158398.7746914463!2d-44.22855019218152!3d-2.5288308283443865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f697a1e251fd71%3A0x356abb152f412591!2sComunidade%20fome%20e%20sede%20de%20Deus%20kadosh!5e0!3m2!1spt-BR!2sbr!4v1686868522281!5m2!1spt-BR!2sbr">
+						Comunidade Fome e Sede Kadosh</option>
+						<option
+						value="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d126629.58203593732!2d-47.5273581!3d-7.3342975!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92d82aae46788bef%3A0x496675a394eaf68f!2scomunidade%20Fome%20e%20Sede%20de%20Deus%20em%20Carolina!5e0!3m2!1spt-BR!2sbr!4v1686868652076!5m2!1spt-BR!2sbr">
+						Comunidade Fome e Sede Carolina</option>
+						<option
+						value="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d125090.67935953863!2d-41.2196769!3d-11.5458513!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x76bfb3aeb3f5365%3A0x8b67705474b31da6!2sIgreja%20Comunidade%20Fome%20e%20Sede%20de%20Deus!5e0!3m2!1spt-BR!2sbr!4v1686868768113!5m2!1spt-BR!2sbr">
+						Comunidade Fome e Sede Morro do Chapeu</option>
+						<option
+						value="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d477.88588792747373!2d-49.249353573817785!3d-16.6223971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef3d399ee3e57%3A0xbf808aac18d24d72!2sIgreja%20AD%20Minist%C3%A9rio%20Vida%20-%20Goi%C3%A2nia%202!5e0!3m2!1spt-BR!2sbr!4v1686868892330!5m2!1spt-BR!2sbr">
+						Comunidade Fome e Sede Goiânia 2</option>
 				</select>
-				<p>*caso nao escolha o local a retirada ficara na Faculdade Senac Goiás - Sede</p>
+				<p>*Caso não selecione nenhuma igreja aparecerá a localização da Comunidade Fome e Sede Matriz</p>
 			</label>
-			<button id="btn-confirmar">Confirmar pedido</button>
-		</form>
+		
+			</form>
 		<div id="iframe-wrapper">
 			<iframe id="mapa1"
-				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3822.780254412028!2d-49.23792758513392!3d-16.63779413853193!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef250d5f74183%3A0x78e6118444fcfc2e!2sFaculdade%20Senac%20Goi%C3%A1s%20-%20Sede!5e0!3m2!1spt-BR!2sbr!4v1681847056726!5m2!1spt-BR!2sbr"
-				width="900" height="590" style="border:0;" allowfullscreen="" loading="lazy"
+				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d122309.25806030945!2d-49.2270288!3d-16.668658999999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef18a39ac20c7%3A0x3c920eb48beab164!2sComunidade%20Fome%20E%20Sede%20De%20Deus!5e0!3m2!1spt-BR!2sbr!4v1686869110045!5m2!1spt-BR!2sbr"
+				width="1200" height="400" style="border:0;" allowfullscreen="" loading="lazy"
 				referrerpolicy="no-referrer-when-downgrade"></iframe>
 		</div>
 	</div>
