@@ -6,4 +6,9 @@ li img {
     width: 500px; /* Define a largura da imagem */
     height: auto;
     margin-left: 15px; /* Mantém a proporção da imagem */
+    
+  }
+  li {
+    align-items: center;
+    text-align: center;
   }
