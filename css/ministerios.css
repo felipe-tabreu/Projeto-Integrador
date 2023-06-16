@@ -1,0 +1,9 @@
+h2 {
+    text-align: center;
+    color: #000080;
+}
+li img {
+    width: 500px; /* Define a largura da imagem */
+    height: auto;
+    margin-left: 15px; /* Mantém a proporção da imagem */
+  }
