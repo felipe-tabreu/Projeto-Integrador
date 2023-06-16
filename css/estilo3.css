@@ -1,0 +1,19 @@
+.recipiente{
+    width: 100%;
+    max-width: 2080px;
+    margin: 0 auto;
+    padding: 0 5px;
+  }
+  
+  .recipiente-item1 img {
+
+  
+    width: 100%;
+    height: 950px;
+    
+  
+  }
+ 
+  #blogRecipiente {
+    z-index: 1;
+  }
