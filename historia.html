@@ -76,31 +76,51 @@
         </div>
       </header>
     <body>
-      
-  <div class="recipiente">
-    <div id="blogRecipiente" class="carousel tela" data-ride="recipiente">
-      <ol class="carousel-indicators1">
-        <li data-target="#blogRecipiente" data-slide-to="0" class="ativo"></li>
-        <li data-target="#blogRecipiente" data-slide-to="1"></li>
-        <li data-target="#blogRecipiente" data-slide-to="2"></li>
-      </ol>
-      <div class="recipiente-inner1">
-        <div class="racipiente-item ativo">
-          <img src="imagens/imagem22.png" alt="Imagem do post 1" />
-        </div>
-        <div class="recipiente-item">
-          <img src="imagens/imagem.png" alt="Imagem do post 2" />
-        </div>
-        <div class="recipiente-item">
-          <img src="imagens/imagem2.png" alt="Imagem do post 3" />
-         
-
-        </div>
-      </div>
+      <div class="restaurar">
+      <div class="carousel">
+        <img src="/imagens/hist1.JPG" alt="Imagem 1">
+        <img src="/imagens/hist2.JPG" alt="Imagem 2">
+        <img src="/imagens/hist3.JPG" alt="Imagem 3">
+        <img src="/imagens/hist4.JPG" alt="Imagem 4">
+        <img src="/imagens/hist5.jpeg" alt="Imagem 5">
+        <img src="/imagens/hist6.JPG" alt="Imagem 6">
+        <img src="/imagens/hist7.jpeg" alt="Imagem 7">
+        
+        <div class="prev">&#10094;</div>
+        <div class="next">&#10095;</div>
     </div>
-    <br> <br>
     
-  </div>
+    <script>
+        var slideIndex = 0;
+        var slides = document.getElementsByTagName("img");
+        var prev = document.querySelector(".prev");
+        var next = document.querySelector(".next");
+        
+        showSlide(slideIndex);
+        
+        prev.addEventListener("click", function() {
+            slideIndex--;
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1;
+            }
+            showSlide(slideIndex);
+        });
+        
+        next.addEventListener("click", function() {
+            slideIndex++;
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            showSlide(slideIndex);
+        });
+        
+        function showSlide(index) {
+            for (var i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[index].style.display = "block";
+        }
+    </script>
       <div id="position">
         <br> <br><br> <br>
         <ul class="sobrenos">
@@ -120,8 +140,8 @@
         </li>
           </ul>
       </div>
-
-
+    </div>
+      
 
       <footer>
         <div id="footer_content">

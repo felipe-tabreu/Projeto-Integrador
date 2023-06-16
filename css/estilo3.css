@@ -1,19 +1,54 @@
-.recipiente{
-    width: 100%;
-    max-width: 2080px;
-    margin: 0 auto;
-    padding: 0 5px;
-  }
+.carousel {
+  position: relative;
+  overflow: hidden;
+  margin-top: 10px;
+  margin-left: 10px;
+width: 4000px; /* Ajuste a largura conforme necessário */
   
-  .recipiente-item1 img {
-
-  
-    width: 100%;
-    height: 950px;
-    
-  
-  }
  
-  #blogRecipiente {
-    z-index: 1;
+height: 300px;
+  
+
+}
+
+.carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel .prev,
+.carousel .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  z-index: 2;
+}
+
+.carousel .prev {
+  left: 10px;
+}
+
+.carousel .next {
+  right: 10px;
+}
+
+.restaurar {
+  
+ 
+  display: flex;
+  }
+  
+ 
+  
+  .text {
+    
+   
+  margin-left: 20px; /* Espaço entre o carrossel e o texto */
   }
