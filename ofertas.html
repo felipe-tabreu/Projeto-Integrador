@@ -12,10 +12,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="css/estilo2.css" />
-  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/ofertas3.css" />
+  <link rel="stylesheet" href="css/ofertas2.css" />
+  <link rel="stylesheet" href="css/ofertas.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
- <link rel="stylesheet" href="css/ministerios.css">
+ 
 </head>
 
 <header>
@@ -69,43 +70,131 @@
         
         <a class="dropdown-item" href="escola.html">Escola Plenos</a>
        
-        <a class="dropdown-item" href="escola.html">Ofertas</a>
+       
     </li>
     
   </div>
 </header>
   <body>
-    <br><br>
+    <div class="container">
+      <h1>Ofertas</h1>
+      <div id="ofertas-container"></div>
+      <div class="form">
+        <h2>Ofertar</h2>
+        <input type="text" id="nome" placeholder="Nome" required>
+        <input type="tel" id="number" placeholder="(xx) xxxxx-xxxx" required>
+        <input type="date" id="data" placeholder="Data de Nascimento" required>
+        <input type="text" id="number " placeholder="00,00" required>
+        <button onclick="adicionarOferta()">enviar</button>
+      </div>
+    </div>
   
-    <h2>CONHEÇA OS NOSSOS PASTORES</h2><br><br>
-
-
-   <ul><ul>
-    <li id="1">
-      <img src="imagens/imagem22.png" alt="Imagem 1">
-      Apóstolo Sandro Murilo ---------- Bispo Paulo Cesar
-     <img src="imagens/pc1.JPG" alt="Imagem 2">
-    </li><br><br>
-    <li id="2">
-     
-      <img src="imagens/ricardo.JPG" alt="Imagem 1">
-      Pastor Ricardo Abreu ---------- Pastor Diego Fernandes
-     <img src="imagens/diego.JPG" alt="Imagem 2">
-    </li><br><br>
-    <li id="3">
-      <img src="imagens/elis.JPG" alt="Imagem 1">
-      Pastora Elisangêla ---------------- Pastora Cristina
-     <img src="imagens/cristina001.JPG" alt="Imagem 2"><br><br>
-     Pastora Cristiane
+    <div class="background-shapes">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+      <div class="shape shape4"></div>
+    </div>
+  
+    <script>
+      async function fetchOfertas() {
+        const response = await fetch('http://localhost:3000/ofertas');
+        const ofertas = await response.json();
+        return ofertas;
+      }
+  
+      function formatarDataSQL(data) {
+        const partes = data.split('-');
+        return `${partes[2]}/${partes[1]}/${partes[0]}`;
+      }
+  
+      function criarOfertasCard(ofertas) {
+        const card = document.createElement('div');
+        card.classList.add('ofertas-card');
+        const nome = document.createElement('h3');
+        nome.textContent = ofertas.nome;
+        const telefone = document.createElement('p');
+        email.telContent = `telefone: ${oferta.contato}`;
+        const dataDaOferta = document.createElement('p');
+        dataDaOferta.textContent = `Data da Oferta: ${formatarDataSQL(oferta.data_ofertas)}`;
+        dataDaOferta.classList.add('date');
+        const valor = document.createElement('p');
+        instagram.textContent = `valor: ${oferta.valor}`;
+        card.appendChild(nome);
+        card.appendChild(telefone);
+        card.appendChild(dataDaOferta);
+        card.appendChild(valor);
+        return card;
+      }
+  
+      async function exibirOfertas() {
+        const ofertasContainer = document.getElementById('ofertas-container');
+        ofertasContainer.innerHTML = '';
+        const ofertas = await fetchOfertas();
+        ofertas.forEach((ofertas) => {
+          const card = criarOfertasCard(ofertas);
+          ofertasContainer.appendChild(card);
+        });
+      }
+  
+      async function adicionarOfertas() {
+        const nomeInput = document.getElementById('nome');
+        const telefoneInput = document.getElementById('telefone');
+        const dataDaOfertaInput = document.getElementById('data_ofertas');
+        const valorInput = document.getElementById('valor');
+  
+        const novoOfertas = {
+          nome: nomeInput.value,
+          telefone: telefoneInput.value,
+          data_ofertas: dataDaOfertaInput.value,
+          valor: valorInput.value,
+        };
+  
+        await fetch('http://localhost:3000/ofertas', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(novoOfertas),
+        });
+  
+        nomeInput.value = '';
+        telefoneInput.value = '';
+        dataDaOfertaInput.value = '';
+        valorInput.value = '';
+  
+        exibirOfertas();
+      }
+  
+      exibirOfertas();
+    </script>
+   
+   <div class="footer-list">
+    <li>
+       Contribua
     </li>
-    
-    
-    <li id="5">      
-      <img src="imagens/hist1.JPG" alt="Imagem 5">
-    </li><br><br>
-   <br><br>
-  </ul>
-  </ul>
+    <li>
+      Razão Social: IGREJA CRISTÃ EVANGELICA EM VILA MORAIS
+        CNPJ: 01.423.981.0001-42 (PIX) <br>
+        Banco Itaú<br>
+        Ag. 4416<br>
+        C/c: 24366-7<br>
+
+    </li>
+   </div>
+  
+  
+
+  <br> <br>
+  
+  <h1>Venha nos Conhecer</h1>
+
+  <br><br><br>
+  <h1><iframe
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15288.654181539767!2d-49.2272594!3d-16.6686975!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef18a39ac20c7%3A0x3c920eb48beab164!2sComunidade%20Fome%20E%20Sede%20De%20Deus!5e0!3m2!1spt-BR!2sbr!4v1681337982063!5m2!1spt-BR!2sbr"
+      width="1450" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe></h1>
+
       
       <footer>
         <div id="footer_content">
@@ -177,19 +266,6 @@
                     <a href="escola.html" class="footer-link">Escola Plenos</a>
                 </li>
               </ul>
-              <ul class="footer-list">
-                <li>
-                   Contribua
-                </li>
-                <li>
-                  Razão Social: IGREJA CRISTÃ EVANGELICA EM VILA MORAIS
-                    CNPJ: 01.423.981.0001-42 (PIX) <br>
-                    Banco Itaú<br>
-                    Ag. 4416<br>
-                    C/c: 24366-7<br>
-
-                </li>
-            </ul>
         </div>
         <div id="footer_copyright">
             
