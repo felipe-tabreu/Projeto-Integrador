@@ -1,49 +1,201 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
-    <title>Carrossel de Fotos</title>
-    <link rel="stylesheet" href="css/estilo3.css">
+  
+  <link rel="icon" type="image/x-icon" href="imagens/logo02.png">
+  <title>Fome e Sede</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/estilo2.css" />
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <link rel="stylesheet" href="css/teste.css">
 </head>
-<body>
-    <div class="carousel">
-        <img src="/imagens/hist1.JPG" alt="Imagem 1">
-        <img src="/imagens/hist2.JPG" alt="Imagem 2">
-        <img src="/imagens/hist3.JPG" alt="Imagem 3">
-        
-        <div class="prev">&#10094;</div>
-        <div class="next">&#10095;</div>
+
+<header>
+  <div class="container-logo">
+    <div class="logo-imagem">
+      <img src="imagens/logo02.ico" alt="logo da igreja">
     </div>
+
+    <div class="logo-texto">
+      <h4>Comunidade<br>
+        Fome Sede</h4>
+    </div>
+
+  </div> <!--container-logo-->
+
+  <div class="menu"> <!--menu-->
     
-    <script>
-        var slideIndex = 0;
-        var slides = document.getElementsByTagName("img");
-        var prev = document.querySelector(".prev");
-        var next = document.querySelector(".next");
+      <li class="nav-item">
+        <a class="nav-link " href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Igreja</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="historia.html">Nossa História</a>
+          <!-- Linha 54/abaixo e onde vai deixar uma divisoria entre as opçoes do dropdown menu -->
+          
+          <a class="dropdown-item" href="ministerios.html">Ministérios</a>
+         
+          <a class="dropdown-item" href="pastores.html">Pastores</a>
+          
+          <a class="dropdown-item" href="agenda.html">Agenda</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Missões</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="projetosmissionarios.html">Projetos Missionários</a>
+          <!-- Linha 54/abaixo e onde vai deixar uma divisoria entre as opçoes do dropdown menu -->
+          
+          <a class="dropdown-item" href="missionarios.html">Missionários</a>
+       
+         
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Participe</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="igrejas.html">Nossas Igrejas</a>
+        <!-- Linha 54/abaixo e onde vai deixar uma divisoria entre as opçoes do dropdown menu -->
         
-        showSlide(slideIndex);
+        <a class="dropdown-item" href="celulas.html">Células</a>
         
-        prev.addEventListener("click", function() {
-            slideIndex--;
-            if (slideIndex < 0) {
-                slideIndex = slides.length - 1;
-            }
-            showSlide(slideIndex);
-        });
-        
-        next.addEventListener("click", function() {
-            slideIndex++;
-            if (slideIndex >= slides.length) {
-                slideIndex = 0;
-            }
-            showSlide(slideIndex);
-        });
-        
-        function showSlide(index) {
-            for (var i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slides[index].style.display = "block";
-        }
-    </script>
-</body>
+        <a class="dropdown-item" href="escola.html">Escola Plenos</a>
+       
+       
+    </li>
+    
+  </div>
+</header>
+  <body>
+  
+    <div id="position">
+      <br> <br><br> <br>
+      <ul class="sobrenos">
+      
+      <h1>CONHEÇA OS NOSSOS PROJETOS MISSIONARIOS</h1><br><br>
+       
+          <li>
+          Nós temos um projeto missionário no morro do chapéu e esse projeto tem um cunho da formação de obreiros para trabalhar com evangelismo trabalhar com escolas de ensino profissional afim de capacitar a nossos irmãos que moram no sertão para o desenvolvimento de uma vida mais tranquila.
+
+           </li> <br>
+        <li>	 Dentro desse projeto nós também trabalhamos com entregas de cestas de alimentos distribuição de roupas de ajuda financeira para saúde
+          É um projeto lindo e arrojado e nós temos como alvo alcançar 32 quilombos em volta da cidade ajudando os nossos irmãos que moram naquela região</li><br>
+        <li>
+          O nosso trabalho entre os índios Terenas também um trabalho muito bonito na cidade de Campo Grande na aldeia de água bonita.
+          Num primeiro momento nosso projeto foi de ajudá-los acerca da igreja a morando em volta pra evitar que houvesse qualquer tipo de infortúnio com sozinhos e também com a comunidade local.</li><br>
+        <li>
+          Numa segunda ocasião nós estivemos também ajudando na construção do banheiro feminino porque a igreja local não tinha esse banheiro e nós estamos trabalhando firme pra terminar esse banheiro feminino e depois o banheiro masculino. Também estamos procurando ajuda na formação de obreiros local com desenvolvimento de ensino bíblico teológico para a formação de novos obreiros a na região.
+            
+      </li>
+      <li>
+        Trabalhar entre essas etnias realmente algo incrível porque os nossos irmãos indígenas eles são muito amáveis e tem uma inteligência fantástica são dotados de uma capacidade muito grande de vencer e conquistar são arrojados e nós aprendemos muito mais do que encenamos quando estamos com eles.
+          
+    </li>
+        </ul>
+    </div>
+  </div>
+      
+      <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+              <a href="index.html">
+                <img src="imagens/logo02.ico">
+              </a>
+                <p>Venha nos seguir,</p>
+
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/comunidadefomesede/" target="_blank" class="footer-link"id="instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                     </a>
+
+                     <a href="https://www.facebook.com/search/top?q=comunidade%20fome%20e%20sede%20de%20deus" target="_blank"class="footer-link"id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer-link"id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                     </a>
+                     
+                     <a href="https://www.youtube.com/@comunidadefomesede" target="_blank"  class="footer-link"id="play">
+                      <i class="fa-sharp fa-solid fa-play"></i>
+
+                    </a>
+                </div>
+            </div>
+                <ul class="footer-list">
+                    <li>
+                    Igreja
+                    </li>
+                    <li>
+                     <a href="historia.html" class="footer-link">Nossa historia</a>
+                    </li>
+                    <li>
+                     <a href="ministerios.html" class="footer-link">Ministerios</a>
+                     </li>
+                    <li>
+                    <a href="pastores.html" class="footer-link"> Pastores</a>
+                    </li>
+                    <li>
+                      <a href="agenda.html" class="footer-link"> Agenda</a>
+                      </li>
+                </ul>
+
+                <ul class="footer-list">
+                <li>
+                   Missões 
+                </li>
+                <li>
+                    <a href="projetosmissionarios.html" class="footer-link">Projetos Missionarios</a>
+                </li>
+                <li>
+                    <a href="missionarios.html" class="footer-link">Missionarios</a>
+                </li>
+                </ul>
+               
+                <ul class="footer-list">
+                  <li>
+                     Participe
+                  </li>
+                  <li>
+                      <a href="igrejas.html" class="footer-link">Nossas Igrejas</a>
+                  </li>
+                  <li>
+                      <a href="celulas.html" class="footer-link">Celulas</a>
+                  </li>
+                  <li>
+                    <a href="escola.html" class="footer-link">Escola Plenos</a>
+                </li>
+              </ul>
+              <ul class="footer-list">
+                <li>
+                   Contribua
+                </li>
+                <li>
+                  Razão Social: IGREJA CRISTÃ EVANGELICA EM VILA MORAIS
+                    CNPJ: 01.423.981.0001-42 (PIX) <br>
+                    Banco Itaú<br>
+                    Ag. 4416<br>
+                    C/c: 24366-7<br>
+
+                </li>
+            </ul>
+        </div>
+        <div id="footer_copyright">
+            
+              &#169
+              2023 DG & FA
+          
+
+        </div>
+
+    </footer>
+  </body>
+
 </html>

@@ -1,0 +1,76 @@
+#position {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .sobrenos {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 40px;
+  }
+  
+  .sobrenos h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  .sobrenos h1::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #FF6B6B;
+  }
+  
+  .sobrenos li {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .sobrenos li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FF6B6B;
+    z-index: 1;
+  }
+  
+  .sobrenos li::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -14px;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #ddd;
+    z-index: 0;
+  }
+  
+  .sobrenos li:last-child::after {
+    display: none;
+  }
+  
+  .sobrenos li::before,
+  .sobrenos li::after {
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .sobrenos li:hover::before,
+  .sobrenos li:hover::after {
+    background-color: #FFA69E;
+  }
+  
